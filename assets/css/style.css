@@ -1,0 +1,19 @@
+.u-header {
+    position: fixed;
+    border-bottom: solid #555 1px;
+    top: 0;
+}
+
+a[href="signin.html"]:hover{
+    color: #72c02c;
+}
+
+#videoYoutube:hover{
+    color: #72c02c !important;
+    border-bottom: solid 1px #72c02c !important;
+}
+
+/*luyen tap*/
+.list-luyen-tap{
+    margin-top: 100px;
+}
