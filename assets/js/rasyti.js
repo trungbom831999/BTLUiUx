@@ -245,7 +245,7 @@ var gKeyboard = (function(window, document, undefined) {
   var keymap = new Array(); // [ (charString, keyRef) ]
   var keymod = new Array(); // [ (charString, modifierRef) ]
   var usrInputTimeout = 150;
-  var usrInputStyle = 'color: white; background-color: black;';
+  var usrInputStyle = 'color: white; background-color: red;';
   var ui = {
     layout: null,
     variant: null,
