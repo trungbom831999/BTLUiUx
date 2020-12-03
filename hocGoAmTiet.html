@@ -139,19 +139,19 @@
 
                 <!-- Thi dau -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                  <a href="#" class="nav-link g-py-7 g-px-0">Thi đấu</a>
+                  <a href="thiDau.html" class="nav-link g-py-7 g-px-0">Thi đấu</a>
                 </li>
                 <!-- End Thi dau -->
 
                 <!-- Tra từ điển -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                  <a href="#" class="nav-link g-py-7 g-px-0">Tra từ điển</a>
+                  <a href="tra_tu_dien.html" class="nav-link g-py-7 g-px-0">Tra từ điển</a>
                 </li>
                 <!-- End Tra từ điển -->
 
                 <!-- Thống kê -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                  <a href="#" class="nav-link g-py-7 g-px-0">Thống kê</a>
+                  <a href="thongKe.html" class="nav-link g-py-7 g-px-0">Thống kê</a>
                 </li>
                 <!-- End Thống kê -->
 
@@ -193,7 +193,8 @@
 
     <div id="wrapper" style="margin-top: 100px; margin-bottom: 20px;">
       <div class="text-center mx-auto g-width-60x--md g-mb-30">
-        <span class="d-inline-block g-color-primary g-font-size-70 g-line-height-1 mb-3"><span class="g-font-size-45">Học gõ âm tiết</span></span>
+        <span class="d-inline-block g-color-primary g-font-size-70 g-line-height-1 mb-3"><span
+            class="g-font-size-45">Học gõ âm tiết</span></span>
       </div>
       <div id="content">
         <div id="metrics" style="float: right; display: none;">
@@ -204,10 +205,10 @@
         <form id="lessonSelector">
           <select id="lesson" style="width: 100%; height: 30px;">
             <option value="1" selected> Gõ lẫn âm </option>
-            <option value="2" > Âm đầu </option>
-            <option value="3" > Âm chính </option>
-            <option value="4" style="display: none;">  Gõ lẫn âm </option>
-            <option value="5" style="display: none;">  Gõ lẫn âm </option>
+            <option value="2"> Âm đầu </option>
+            <option value="3"> Âm chính </option>
+            <option value="4" style="display: none;"> Gõ lẫn âm </option>
+            <option value="5" style="display: none;"> Gõ lẫn âm </option>
           </select>
           <select id="level" style="display: none;">
             <option value="-1"> (loading…) </option>
@@ -217,15 +218,12 @@
         <form id="lessonInput">
           <h2 style="color: red; text-align: center; font-size: 24px;">TR</h2>
           <textarea id="txtInput" spellcheck="false"></textarea>
-          <button id = "bt1" style="  
+          <button id="bt1" style="  
             display: block;
             margin-left: auto;
             background-color: #72c02c;
-            color: white;" 
-            onmousemove="changeColor()" 
-            onmouseout="setcolor()"
-            >
-          Âm khác </button>
+            color: white;" onmousemove="changeColor()" onmouseout="setcolor()">
+            Âm khác </button>
         </form>
 
 
@@ -864,10 +862,10 @@
   <script src="assets/style-switcher/vendor/spectrum/spectrum.js"></script>
   <script src="assets/style-switcher/style-switcher.js"></script>
   <script>
-    function changeColor(){
+    function changeColor() {
       document.getElementById('bt1').style.background = "#4CAF50";
     }
-    function setcolor(){
+    function setcolor() {
       document.getElementById('bt1').style.background = '#72c02c';
     }    
   </script>

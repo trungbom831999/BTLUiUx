@@ -507,7 +507,7 @@ var gLessons = (function(window, document, undefined) {
     ui.level.innerHTML = '<option> (loading...) </option>';
 
     // load the layout file
-    var href = 'lessons/' + name + '.typist.xml';
+    var href = 'lessons/english.typist.xml';
     XHR.loadXML(href, function(xmldoc) {
       lessonsDoc = xmldoc;
       var levelNodes = xmldoc.getElementsByTagName('Level');
