@@ -139,19 +139,19 @@
 
                 <!-- Thi dau -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                  <a href="#" class="nav-link g-py-7 g-px-0">Thi đấu</a>
+                  <a href="thiDau.html" class="nav-link g-py-7 g-px-0">Thi đấu</a>
                 </li>
                 <!-- End Thi dau -->
 
                 <!-- Tra từ điển -->
                 <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                  <a href="#" class="nav-link g-py-7 g-px-0">Tra từ điển</a>
+                  <a href="tra_tu_dien.html" class="nav-link g-py-7 g-px-0">Tra từ điển</a>
                 </li>
                 <!-- End Tra từ điển -->
 
                 <!-- Thống kê -->
-                <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                  <a href="#" class="nav-link g-py-7 g-px-0">Thống kê</a>
+                <li class="nav-item  g-mx-10--lg g-mx-15--xl active">
+                  <a href="thongKe.html" class="nav-link g-py-7 g-px-0">Thống kê</a>
                 </li>
                 <!-- End Thống kê -->
 
@@ -189,52 +189,170 @@
       </div>
 
       <script>
-window.onload = function () {
+        window.onload = function () {
 
-var chart = new CanvasJS.Chart("chartContainer", {
-  animationEnabled: true,
-  theme: "light2",
-  title:{
-    text: "Thống kê điểm"
-  },
-  data: [{        
-    type: "line",
-        indexLabelFontSize: 16,
-    dataPoints: [
-      { y: 1,indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
-      { y: 1.2},
-      { y: 1.5,  },
-      { y: 2 },
-      { y: 2.8 },
-      { y: 3.2 },
-      { y: 4.5 },
-      { y: 6.9 },
-      { y: 8 ,},
-      { y: 9 },
-      { y: 9.9,indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle"   },
-    ]
-  }]
-});
-chart.render();
+          var chart1 = new CanvasJS.Chart("chartContainer1", {
+            animationEnabled: true,
+            theme: "light2",
+            title: {
+              text: "Thống kê điểm"
+            },
+            data: [{
+              type: "line",
+              indexLabelFontSize: 16,
+              dataPoints: [
+                { y: 1, indexLabel: "\u2193 lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
+                { y: 1.2 },
+                { y: 1.5, },
+                { y: 2 },
+                { y: 2.8 },
+                { y: 3.2 },
+                { y: 4.5 },
+                { y: 6.9 },
+                { y: 8, },
+                { y: 9 },
+                { y: 9.9, indexLabel: "\u2191 highest", markerColor: "red", markerType: "triangle" },
+              ]
+            }]
+          });
+          chart1.render();
 
-}
-</script>
+          var chart2 = new CanvasJS.Chart("chartContainer2", {
+            animationEnabled: true,
+            theme: "light2",
+            title: {
+              text: "Thống kê thời gian"
+            },
+            data: [{
+              type: "line",
+              indexLabelFontSize: 16,
+              dataPoints: [
+                { y: 1, indexLabel: "\u2193 lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
+                { y: 1.2 },
+                { y: 1.5, },
+                { y: 1.2 },
+                { y: 2 },
+                { y: 1.4 },
+                { y: 2.1, indexLabel: "\u2191 highest", markerColor: "red", markerType: "triangle" },
+                { y: 1.2 },
+                { y: 1.5, },
+                { y: 1.3 },
+                { y: 1.4 },
+              ]
+            }]
+          });
+          chart2.render();
+
+
+          var chart3 = new CanvasJS.Chart("chartContainer3", {
+
+
+            title: {
+              text: ""
+            },
+            axisY: {
+              title: "Số lần viết sai",
+              lineColor: "#4F81BC",
+              tickColor: "#4F81BC",
+              labelFontColor: "#4F81BC"
+            },
+            axisY2: {
+              title: "Tỉ lệ viết sai",
+              suffix: "%",
+              lineColor: "#C0504E",
+              tickColor: "#C0504E",
+              labelFontColor: "#C0504E"
+            },
+            data: [{
+              type: "column",
+              dataPoints: [
+                { label: "Thiết", y: 55 },
+                { label: "Giao", y: 42 },
+                { label: "Và", y: 34 },
+                { label: "Trải", y: 32 },
+                { label: "Người", y: 28 },
+                { label: "Dùng", y: 25 },
+                { label: "Kế", y: 22 },
+                { label: "Diện", y: 20 },
+                { label: "Học", y: 17 },
+                { label: "Nghiệm", y: 17 },
+                { label: "Môn", y: 16 },
+              ]
+            }]
+          });
+          chart3.render();
+          createPareto();
+
+          function createPareto() {
+            var dps = [];
+            var yValue, yTotal = 0, yPercent = 0;
+
+            for (var i = 0; i < chart3.data[0].dataPoints.length; i++)
+              yTotal += chart3.data[0].dataPoints[i].y;
+
+
+            dps.push({ label: chart3.data[0].dataPoints[1].label, y: 60 });
+            dps.push({ label: chart3.data[0].dataPoints[2].label, y: 56 });
+            dps.push({ label: chart3.data[0].dataPoints[3].label, y: 30 });
+            dps.push({ label: chart3.data[0].dataPoints[4].label, y: 42 });
+            dps.push({ label: chart3.data[0].dataPoints[5].label, y: 28 });
+            dps.push({ label: chart3.data[0].dataPoints[6].label, y: 34 });
+            dps.push({ label: chart3.data[0].dataPoints[7].label, y: 30 });
+            dps.push({ label: chart3.data[0].dataPoints[8].label, y: 27 });
+            dps.push({ label: chart3.data[0].dataPoints[9].label, y: 19 });
+            dps.push({ label: chart3.data[0].dataPoints[10].label, y: 18 });
+            dps.push({ label: chart3.data[0].dataPoints[0].label, y: 18 });
+
+
+            chart3.addTo("data", { type: "line", yValueFormatString: "0.##\"%\"", dataPoints: dps });
+            chart3.data[1].set("axisYType", "secondary", false);
+            chart3.axisY[0].set("maximum", yTotal);
+            chart3.axisY2[0].set("maximum", 100);
+          }
+
+        }
+      </script>
     </header>
     <!-- End Header -->
 
-<body>\
-  <br><br><br><br><br><br><br><br>
-  <div class="row">
-  <div class="col-md-2"></div>
-  <div class="col-md-8">
-  Điểm <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-</div>
- <div class="col-md-2"><br><br><br><br><br><br><br><br><br><br><br><br><br>Bài</div>
-</div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-<br><br><br>
-</body>
-  
+    <body>\
+      <br><br><br><br><br><br><br><br>
+      <div class="row mx-0">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          Điểm <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+        </div>
+        <div class="col-md-2"><br><br><br><br><br><br><br><br><br><br><br><br><br>Bài</div>
+      </div>
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <br><br><br>
+
+      <br><br><br>
+      <div class="row mx-0">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          Thời gian(h) <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+        </div>
+        <div class="col-md-2"><br><br><br><br><br><br><br><br><br><br><br><br><br>Ngày</div>
+      </div>
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <br><br><br>
+
+      <br><br><br>
+      <h3>
+        <center><b>Những từ viết sai phổ biến</b></center>
+      </h3>
+      <div class="row mx-0">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div id="chartContainer3" style="height: 300px; width: 100%;"></div>
+        </div>
+
+      </div>
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <br><br><br>
+    </body>
+
 
 
     <!-- Footer -->
@@ -576,10 +694,10 @@ chart.render();
   <script src="assets/style-switcher/vendor/spectrum/spectrum.js"></script>
   <script src="assets/style-switcher/style-switcher.js"></script>
   <script>
-    function changeColor(){
+    function changeColor() {
       document.getElementById('bt1').style.background = "#4CAF50";
     }
-    function setcolor(){
+    function setcolor() {
       document.getElementById('bt1').style.background = '#72c02c';
     }    
   </script>

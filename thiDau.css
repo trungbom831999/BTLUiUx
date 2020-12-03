@@ -45,3 +45,8 @@
 .competition__room_keyboard {
   flex: 2;
 }
+
+a{
+  text-decoration: none;
+  color: #fff;
+}

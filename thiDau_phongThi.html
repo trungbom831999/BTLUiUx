@@ -259,11 +259,19 @@
               <span id="accuracy">0</span> errors
             </div>
             <br>
+            <form id="lessonSelector" style="display: none;">
+              <select id="lesson">
+                <option value="english" selected> English </option>
+              </select>
+              <select id="level">
+                <option value="-1"> (loading…) </option>
+              </select>
+            </form>
             <form id="lessonInput">
               <h2 style="color: black; text-align: center; font-size: 24px;">
                 Dân ta phải biết sử ta, cho tường gốc tích nước nhà Việt Nam.</h2>
               <textarea id="txtInput" spellcheck="false"></textarea>
-              <button id = "bt1" style="  
+              <!-- <button id = "bt1" style="  
                 display: block;
                 margin-left: auto;
                 background-color: #72c02c;
@@ -271,7 +279,7 @@
                 onmousemove="changeColor()" 
                 onmouseout="setcolor()"
                 >
-              Câu khác </button>
+              Câu khác </button> -->
             </form>
     
     
@@ -834,36 +842,6 @@
       setTimeout(function () {
         $.HSCore.components.HSTabs.init('[role="tablist"]');
       }, 200);
-    });
-  </script>
-
-  <script>
-    $(document).ready(function () {
-      // $("#txtInput").change(function () {
-      //   alert('Textarea is changed');
-      // });
-      // $('#txtInput').on('input', (event) => alert('Changed!'));
-      $('#txtInput').on('input', function (event) {
-        if (this.value == "a b c") {
-          Swal.fire({
-            title: 'Chúc mừng bạn đã luyện tập xong <br> Bài 1',
-            width: 600,
-            // padding: '3em',
-            backdrop: `
-    rgba(0,0,123,0.4)
-    url("/nyan-cat.gif")
-    left top
-    no-repeat
-  `,
-            showCancelButton: true,
-            confirmButtonColor: '#72c02c',
-            cancelButtonColor: '#72c02c',
-            confirmButtonText: '<a class="g-brd-2 g-brd-gray-light-v4 g-brd-primary--hover g-color-primary" href="luyenTap.html" style="color: #fff !important; text-decoration:none">Bài tiếp theo</a>',
-            cancelButtonText: '<a class="g-brd-2 g-brd-gray-light-v4 g-brd-primary--hover g-color-primary" href="luyenTapList.html" style="color: #fff !important; text-decoration:none">Danh sách luyện</a>',
-            reverseButtons: true
-          })
-        }
-      });
     });
   </script>
 
