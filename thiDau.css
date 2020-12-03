@@ -31,3 +31,17 @@
 .competition__content_table > div {
   width: 90%;
 }
+
+.competition__room {
+  position: relative;
+  display: flex;
+  flex-direction: "row";
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+.competition__room_info {
+  flex: 1;
+}
+.competition__room_keyboard {
+  flex: 2;
+}
