@@ -1,0 +1,33 @@
+.competition__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.competition__header_intro {
+
+}
+.competition__header_btn > button {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+}
+.competition__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.competition__content_table {
+ flex: 1;
+ 
+}
+.competition__content_rules {
+  flex: 1;
+}
+.competition__content_table > div {
+  width: 90%;
+}
