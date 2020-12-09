@@ -95,21 +95,21 @@ html, body {
 
 .hints li.active * {
   font-weight: bold;
-  color: white;
+  /* color: white; */
 }
 
-.hints .left2  { background-color: #db0; }
-.hints .right2 { background-color: #ee0; }
-.hints .left3, .hints .right3 { background-color: #ac0; }
-.hints .left4, .hints .right4 { background-color: #3bb; }
-.hints .left5, .hints .right5 { background-color: #88f; }
+.hints .left2  { background-color: rgb(248, 203, 0); }
+.hints .right2 { background-color:rgb(248, 203, 0); }
+.hints .left3, .hints .right3 { background-color: rgb(248, 203, 0); }
+.hints .left4, .hints .right4 { background-color:rgb(248, 203, 0); }
+.hints .left5, .hints .right5 { background-color:rgb(248, 203, 0); }
 
 .hints li#ac01, .hints li#ac02, .hints li#ac03,
 .hints li#ac08, .hints li#ac09, .hints li#ac10,
 .hints li#ac04, .hints li#ac07 { /* home row */
   background-image: url(images/grid4.gif);
   font-weight: bold;
-  color: white;
+  /* color: white; */
 }
 
 
@@ -186,4 +186,5 @@ html, body {
   height: 1.5em;
   line-height: 1.5em;
 }
+
 

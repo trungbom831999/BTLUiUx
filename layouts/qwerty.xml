@@ -18,40 +18,40 @@
     <key name="AE11" base="-" shift="_" />
     <key name="AE12" base="=" shift="+" />
     <!--row #2-->
-    <key name="AD01" base="q" shift="Q" />
-    <key name="AD02" base="w" shift="W" />
-    <key name="AD03" base="e" shift="E" />
-    <key name="AD04" base="r" shift="R" />
-    <key name="AD05" base="t" shift="T" />
+    <key name="AD01" base="q" shift="S" />
+    <key name="AD02" base="w" shift="K" />
+    <key name="AD03" base="e" shift="R" />
+    <key name="AD04" base="r" shift="N" />
+    <key name="AD05" base="t" shift="H" />
     <key name="AD06" base="y" shift="Y" />
-    <key name="AD07" base="u" shift="U" />
-    <key name="AD08" base="i" shift="I" />
-    <key name="AD09" base="o" shift="O" />
-    <key name="AD10" base="p" shift="P" />
-    <key name="AD11" base="[" shift="{" />
+    <key name="AD07" base="u" shift="*" />
+    <key name="AD08" base="i" shift="W" />
+    <key name="AD09" base="o" shift="J" />
+    <key name="AD10" base="p" shift="N" />
+    <key name="AD11" base="[" shift="T" />
     <key name="AD12" base="]" shift="}" />
     <!--row #3-->
-    <key name="AC01" base="a" shift="A" />
-    <key name="AC02" base="s" shift="S" />
-    <key name="AC03" base="d" shift="D" />
-    <key name="AC04" base="f" shift="F" />
-    <key name="AC05" base="g" shift="G" />
+    <key name="AC01" base="a" shift="T" />
+    <key name="AC02" base="s" shift="P" />
+    <key name="AC03" base="d" shift="H" />
+    <key name="AC04" base="f" shift="N" />
+    <key name="AC05" base="g" shift="S" />
     <key name="AC06" base="h" shift="H" />
-    <key name="AC07" base="j" shift="J" />
-    <key name="AC08" base="k" shift="K" />
-    <key name="AC09" base="l" shift="L" />
-    <key name="AC10" base=";" shift=":" />
-    <key name="AC11" base="'" shift='"' />
+    <key name="AC07" base="j" shift="I" />
+    <key name="AC08" base="k" shift="Y" />
+    <key name="AC09" base="l" shift="J" />
+    <key name="AC10" base=";" shift="G" />
+    <key name="AC11" base="'" shift='K' />
     <key name="BKSL" base="\" shift="|" />
     <!--row #4-->
     <key name="LSGT" base="\" shift="|" />
     <key name="AB01" base="z" shift="Z" />
     <key name="AB02" base="x" shift="X" />
-    <key name="AB03" base="c" shift="C" />
-    <key name="AB04" base="v" shift="V" />
+    <key name="AB03" base="c" shift="U" />
+    <key name="AB04" base="v" shift="O" />
     <key name="AB05" base="b" shift="B" />
-    <key name="AB06" base="n" shift="N" />
-    <key name="AB07" base="m" shift="M" />
+    <key name="AB06" base="n" shift="E" />
+    <key name="AB07" base="m" shift="A" />
     <key name="AB08" base="," shift="&lt;" />
     <key name="AB09" base="." shift="&gt;" />
     <key name="AB10" base="/" shift="?" />

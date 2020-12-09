@@ -79,17 +79,19 @@ ul#keyboard li strong {
   position: absolute;
   font-weight: normal;
   top: 2px;
-  left: 3px;
+  left: 3px; 
+  margin-left: 9.5px;
 }
 ul#keyboard li em {
   position: absolute;
   font-style: normal;
   bottom: 2px;
   left: 3px;
+  font-size: x-small;
 }
 ul#keyboard li .deadKey {
   font-size: larger;
-  color: red;
+  color: rgb(255, 0, 0);
 }
 
 /* special keys */
@@ -128,6 +130,10 @@ ul#keyboard li#key_SPCE {
 ul#keyboard li#key_MENU {
   /*width: 40px;*/
   width: 40px;
+}
+
+li[id^="key_AE0"], #key_AE10{
+  background-color:#ff8533 !important;
 }
 
 /* hide LSGT for pc104 (default) */
@@ -268,7 +274,16 @@ li#key_LFSH, li#key_RTSH {
   clear: both;
   text-align: center;
   font-weight: bold;
-  color: brown;
+  color: rgb(161, 63, 63);
   display: none;
 }
+
+.disable-key{
+  background-color:#5a5a5a !important;
+}
+
+.bg-blue{
+  background-color:rgb(50, 115, 189) !important;
+}
+
 
