@@ -15,7 +15,7 @@
 .competition__content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   /* align-items: center; */
   position: relative;
   margin-top: 30px;
@@ -26,7 +26,11 @@
  
 }
 .competition__content_rules {
+  flex: 2 ;
+}
+.table-diemso{
   flex: 1;
+  width: 80%;
 }
 .competition__content_table > div {
   width: 90%;
@@ -50,3 +54,42 @@ a{
   text-decoration: none;
   color: #fff;
 }
+
+.competition__solo_header{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+}
+.competition__solo_title {
+  text-align: center;
+}
+.competition__solo_title h1 {
+  color: forestgreen;
+  font-weight: 400;
+}
+
+.competition_solo_people {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+.competition__solo {
+  margin-top: 30px;
+}
+.competition_solo_exam {
+  text-align: center;
+}
+.competition__solo_info {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.table-diemso {
+  
+}
+
