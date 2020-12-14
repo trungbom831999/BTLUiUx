@@ -76,7 +76,7 @@ html, body {
 }
 
 #lessonInput textarea.error {
-  background-color: red;
+  background-color: rgb(255, 0, 0);
 }
 
 .hints #lessonInput textarea {
@@ -90,7 +90,7 @@ html, body {
 
 .hints li.active,
 .hints ul#keyboard li.specialKey.active {
-  background-color: brown;
+  background-color: rgb(255, 50, 50);
 }
 
 .hints li.active * {
@@ -98,11 +98,11 @@ html, body {
   /* color: white; */
 }
 
-.hints .left2  { background-color: rgb(248, 203, 0); }
+/* .hints .left2  { background-color: rgb(248, 203, 0); }
 .hints .right2 { background-color:rgb(248, 203, 0); }
 .hints .left3, .hints .right3 { background-color: rgb(248, 203, 0); }
 .hints .left4, .hints .right4 { background-color:rgb(248, 203, 0); }
-.hints .left5, .hints .right5 { background-color:rgb(248, 203, 0); }
+.hints .left5, .hints .right5 { background-color:rgb(248, 203, 0); } */
 
 .hints li#ac01, .hints li#ac02, .hints li#ac03,
 .hints li#ac08, .hints li#ac09, .hints li#ac10,

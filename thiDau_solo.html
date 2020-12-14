@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
   <link rel="stylesheet" href="assets/vendor/hamburgers/hamburgers.min.css">
   <link rel="stylesheet" href="assets/css/keyboard.css">
+  <link rel="stylesheet" href="assets/css/keyboard2.css">
   <!-- <link rel="stylesheet" href="assets/css/layout.css"> -->
   <link rel="stylesheet" href="assets/css/rasyti.css">
   <!-- CSS Unify -->
@@ -41,6 +42,30 @@
   <!-- CSS style  -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="./thiDau.css">
+  <!-- <style>
+    .left2 {
+      background-color: rgb(248, 203, 0);
+    }
+
+    .right2 {
+      background-color: rgb(248, 203, 0);
+    }
+
+    .left3,
+    .right3 {
+      background-color: rgb(248, 203, 0);
+    }
+
+    .left4,
+    .right4 {
+      background-color: rgb(248, 203, 0);
+    }
+
+    .left5,
+    .right5 {
+      background-color: rgb(248, 203, 0);
+    }
+  </style> -->
 </head>
 
 <body style="background-color: #fdfdfd !important;">
@@ -113,6 +138,9 @@
                   <ul
                     class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
                     id="nav-submenu--luyenTap" aria-labelledby="nav-link--luyenTap">
+                    <li class="dropdown-item ">
+                      <a class="nav-link" href="luyenTap.html">Luyện gõ phím</a>
+                    </li>
                     <li class="dropdown-item hs-has-sub-menu ">
                       <a id="nav-link--features--luyenTu" class="nav-link" href="luyenTapList.html" aria-haspopup="true"
                         aria-expanded="false" aria-controls="nav-submenu--features--luyenTu">Luyện gõ từ</a>
@@ -193,15 +221,15 @@
     <!-- SOLO -->
     <div class="mt-3">
       <!-- <div class="competition__solo_header"> -->
-        <div class="competition__solo_title"> 
-          <h1>Chào mừng đến sàn đấu SOLO</h1>
-          <h3>Hãy đến đây và so tài trình độ của bạn</h3>
-        </div>
+      <div class="competition__solo_title">
+        <h1>Chào mừng đến sàn đấu SOLO</h1>
+        <h3>Hãy đến đây và so tài trình độ của bạn</h3>
+      </div>
       <!-- </div> -->
       <div class=" container competition__solo_info">
         <div class="competition__solo_info_room">
           <h3>
-            Thông tin phòng thi 
+            Thông tin phòng thi
           </h3>
           <ul>
             <li>
@@ -212,49 +240,44 @@
             </li>
           </ul>
         </div>
-        <div class="competition__solo_timecounter">
+        <div class="competition__solo_timecounter text-center">
           <h3>Bộ đếm thời gian</h3>
           <h4>00:00:00</h4>
           <div class="competition__room_btnStart">
-            <button type="button" class="btn btn-info">Bắt đầu thi đấu</button>
+            <a class="btn u-btn-blue g-font-weight-600 g-rounded-50 g-px-30 g-py-13" href="#">Bắt đầu thi đấu</a>
           </div>
         </div>
       </div>
-        
-      
+
+
       <div class="competition__solo">
         <div class="competition_solo_exam">
           <h2>Đề bài </h2>
           <h3>Dân ta phải biết sử ta cho tường gốc rễ mới là Việt Nam</h3>
         </div>
         <!-- ban phim -->
-        <div class="competition_solo_people">
-          <div class="competition_solo_people_1">
+        <!-- <div class="competition_solo_people"> -->
+          <div class="row mx-0">
+          <div class="col-5 mt-2">
             <div class="competition__room_keyboard">
-              <div id="wrapper" style="margin-top: 10px; margin-bottom: 20px;">
-                <div class="text-center mx-auto g-width-60x--md g-mb-30">
-                  <!-- <span class="d-inline-block g-color-primary g-font-size-70 g-line-height-1 mb-3"><span
-                      class="g-font-size-45">Điểm số </span></span> -->
-                      <h4 style="padding-top: 20px;">Tên người chơi : <i> Minh Hoàng </i></h4>
-                      <h4>Trạng thái : <i>Sẵn sàng</i> </h4>
-                      <h4>Điểm số: <i>0</i></h4>
+              <div id="wrapper" style="margin-top: 10px; margin-bottom: 20px; width: 100%;">
+                <div class="row mx-auto g-mb-30">
+                  <div class="col col-3">
+                    <img class="avatar" src="avt1.jpg" alt="Ảnh đại diện">
+                  </div>
+                  <div class="col col-9">
+                    <h4 style="padding-top: 20px;">Tên người chơi : <i> Minh Hoàng </i></h4>
+                    <h4>Trạng thái : <i>Sẵn sàng</i> </h4>
+                    <h4>Điểm số: <i>0</i></h4>
+                  </div>
                 </div>
                 <div id="content">
                   <form id="lessonInput">
-                    <textarea id="txtInput" spellcheck="false"></textarea>
-                    <!-- <button id = "bt1" style="  
-                    display: block;
-                    margin-left: auto;
-                    background-color: #72c02c;
-                    color: white;" 
-                    onmousemove="changeColor()" 
-                    onmouseout="setcolor()"
-                    >
-                  Câu khác </button> -->
+                    <textarea id="txtInput" spellcheck="false" readonly></textarea>
                   </form>
-    
-    
-                  <ul id="keyboard">
+
+
+                  <ul id="keyboard2">
                     <li id="row_AE">
                       <ul>
                         <li id="key_TLDE" class="left5 disable-key">
@@ -516,7 +539,7 @@
                       </ul>
                     </li>
                   </ul>
-    
+
                   <form id="keyboardSelector" style="display: none;">
                     <dl>
                       <dt> keyboard layout: </dt>
@@ -543,38 +566,33 @@
                       </dd>
                     </dl>
                   </form>
-    
+
                   <div style="clear: both; height: 0;"></div>
-    
+
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
-          <div class="competition_solo_people_2">
+
+          <div class="col-7">
             <div class="competition__room_keyboard">
-              <div id="wrapper" style="margin-top: 10px; margin-bottom: 20px;">
-                <div class="text-center mx-auto g-width-60x--md g-mb-30">
-                  <!-- <span class="d-inline-block g-color-primary g-font-size-70 g-line-height-1 mb-3"><span
-                      class="g-font-size-45">Điểm số </span></span> -->
-                      <h4 style="padding-top: 20px;">Tên người chơi : <i> Minh Hoàng </i></h4>
-                      <h4>Trạng thái : <i>Sẵn sàng</i> </h4>
-                      <h4>Điểm số: <i>0</i></h4>
+              <div id="wrapper" style="margin-top: 10px; margin-bottom: 20px; width: 100%;">
+                <div class="row mx-auto g-mb-30">
+                  <div class="col col-3">
+                    <img class="avatar" src="avt2.jpg" alt="Ảnh đại diện">
+                  </div>
+                  <div class="col col-9">
+                    <h4 style="padding-top: 20px;"><i><strong>Bạn</strong></i></h4>
+                    <h4>Trạng thái : <i>Sẵn sàng</i> </h4>
+                    <h4>Điểm số: <i>0</i></h4>
+                  </div>
                 </div>
                 <div id="content">
                   <form id="lessonInput">
                     <textarea id="txtInput" spellcheck="false"></textarea>
-                    <!-- <button id = "bt1" style="  
-                    display: block;
-                    margin-left: auto;
-                    background-color: #72c02c;
-                    color: white;" 
-                    onmousemove="changeColor()" 
-                    onmouseout="setcolor()"
-                    >
-                  Câu khác </button> -->
                   </form>
-    
-    
+
+
                   <ul id="keyboard">
                     <li id="row_AE">
                       <ul>
@@ -837,7 +855,7 @@
                       </ul>
                     </li>
                   </ul>
-    
+
                   <form id="keyboardSelector" style="display: none;">
                     <dl>
                       <dt> keyboard layout: </dt>
@@ -864,12 +882,12 @@
                       </dd>
                     </dl>
                   </form>
-    
+
                   <div style="clear: both; height: 0;"></div>
-    
+
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </div>
       </div>

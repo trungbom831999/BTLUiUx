@@ -272,6 +272,21 @@ var gKeyboard = (function(window, document, undefined) {
     var kbLayout = window.location.hash.substring(1) ||
       STORAGE.getItem('kbLayout') || 'qwerty';
     setLayout(kbLayout);
+    // if($('#switch-change').text() == "true"){
+    //   setLayout(kbLayout);
+    // }
+    // $('#switch').click(function (keyChar) {
+    //   if ($('#switch-change').text() == "true") {
+    //     console.log('tắt');
+    //     $('#switch-change').text("false");
+    //     // key.className -= ' active';
+    //   } else {
+    //     console.log('bật');
+    //     $('#switch-change').text("true");
+    //     setLayout(kbLayout);
+    //     // key.className += ' active';
+    //   };
+    // });
     setShape(STORAGE.getItem('kbShape') || 'pc104');
     showHints(STORAGE.getItem('kbHints') != 'off');
   }
@@ -310,6 +325,19 @@ var gKeyboard = (function(window, document, undefined) {
     ui.hints.checked = on;
     STORAGE.setItem('kbHints', (on ? 'on' : 'off'));
   }
+
+  // $('#switch').click(function (keyChar) {
+  //   if ($('#switch-change').text() == "true") {
+  //     console.log('tắt');
+  //     $('#switch-change').text("false");
+  //     // key.className -= ' active';
+  //   } else {
+  //     console.log('bật');
+  //     $('#switch-change').text("true");
+  //     setLayout(kbLayout);
+  //     // key.className += ' active';
+  //   };
+  // });
 
   function setLayout(kbLayout) {
 /*    ui.variant.innerHTML = '<option> (loading...) </option>';*/
@@ -455,7 +483,7 @@ var gKeyboard = (function(window, document, undefined) {
     if (key) {
       ui.hands.className = key.className;
       ui.activeKey = key;
-      key.className += ' active';
+      key.className += ' active';      
     }
 
     // highlight the modifier, if any
@@ -775,6 +803,8 @@ if ('addEventListener' in window) window.addEventListener('load', function() {
     }
   }
 }, false);
+
+
 
 
 

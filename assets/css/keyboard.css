@@ -5,7 +5,6 @@
 ul#keyboard, ul#keyboard ul {
   margin: 0;
   padding: 0;
-  /*width: 664px;*/
   width: 664px;
   }
 * html ul#keyboard ul {
@@ -91,7 +90,7 @@ ul#keyboard li em {
 }
 ul#keyboard li .deadKey {
   font-size: larger;
-  color: rgb(255, 0, 0);
+  /* color: rgb(255, 0, 0); */
 }
 
 /* special keys */

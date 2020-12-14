@@ -112,6 +112,9 @@
                   <ul
                     class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling"
                     id="nav-submenu--luyenTap" aria-labelledby="nav-link--luyenTap">
+                    <li class="dropdown-item ">
+                      <a class="nav-link" href="luyenTap.html">Luyện gõ phím</a>
+                    </li>
                     <li class="dropdown-item hs-has-sub-menu ">
                       <a id="nav-link--features--luyenTu" class="nav-link" href="luyenTapList.html" aria-haspopup="true"
                         aria-expanded="false" aria-controls="nav-submenu--features--luyenTu">Luyện gõ từ</a>
@@ -196,6 +199,11 @@
         <span class="d-inline-block g-color-primary g-font-size-70 g-line-height-1 mb-2"><span
             class="g-font-size-45">Luyện tập</span></span>
       </div>
+      <div class="custom-control custom-switch text-right">
+        <input type="checkbox" class="custom-control-input" id="switch" name="example" checked="false">
+        <label class="custom-control-label g-font-size-18" for="switch">Gợi ý</label>
+        <p id="switch-change" style="display: none;">true</p>
+      </div>
       <div id="content">
         <div id="metrics" style="float: right; display: none;">
           <span id="speed">0</span> cpm
@@ -211,9 +219,19 @@
           </select>
         </form>
 
+        <div class="form-group">
+          <label class="mb-0" for="lessonlt"><h5>Chọn bài luyện tập</h5></label>
+          <select class="form-control pl-0" id="lessonlt">
+            <option>Level Easy</option>
+            <option>Level Khó dễ</option>
+            <option>Level Max</option>
+            <option>Level Thượng thừa</option>
+            <option>Level Cảnh giới</option>
+          </select>
+        </div>
         <form id="lessonInput">
           <div id="hands" style="display: none;"><span></span></div>
-          <textarea id="txtPrompt">a b c</textarea>
+          <textarea id="txtPrompt" readonly></textarea>
           <textarea id="txtInput" spellcheck="false"></textarea>
         </form>
 
@@ -784,7 +802,7 @@
       // });
       // $('#txtInput').on('input', (event) => alert('Changed!'));
       $('#txtInput').on('input', function (event) {
-        if (this.value == "a a a") {
+        if (this.value == $('#txtPrompt').val()) {
           Swal.fire({
             title: 'Chúc mừng bạn đã luyện tập xong <br> Bài 1',
             width: 600,
@@ -805,6 +823,30 @@
         }
       });
     });
+  </script>
+
+  <script>
+
+    $('#switch').click(function () {
+      if ($('#switch-change').text() == "true") {
+        console.log('tắt');
+        $('#switch-change').text("false");
+        // $("head").html('.hints li.active{background-color: #fff;}');
+        // $("head").html('.hints ul#keyboard li.specialKey.active{background-color: #fff;}');
+        // $('.hints ul#keyboard li.specialKey.active').css('background-color', '#fff');
+        $( "<style>.hints li.active, .hints ul#keyboard li.specialKey.active{background-color: #fff;} </style>" ).appendTo( "head" );
+      } else {
+        console.log('bật');
+        $('#switch-change').text("true");
+        // $("head").html('.hints li.active{background-color: rgb(255, 50, 50);}');
+        // $("head").html('.hints ul#keyboard li.specialKey.active{background-color: rgb(255, 50, 50);}');
+        $( "<style>.hints li.active, .hints ul#keyboard li.specialKey.active{background-color: rgb(255, 50, 50);} </style>" ).appendTo( "head" );
+        // $('.hints li.active').css('background-color', 'rgb(255, 50, 50)');
+        // $('.hints ul#keyboard li.specialKey.active').css('background-color', 'rgb(255, 50, 50)');
+      };
+    });
+
+
   </script>
 
 

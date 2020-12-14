@@ -17,3 +17,23 @@ a[href="signin.html"]:hover{
 .list-luyen-tap{
     margin-top: 80px !important;
 }
+
+.custom-switch .custom-control-label::before {
+    left: -2.9rem;
+    width: 2.5rem;
+    pointer-events: all;
+    border-radius: 1.5rem;
+}
+
+.custom-control-label::before {
+    height: 1.5rem;
+}
+
+.custom-switch .custom-control-label::after {
+    top: calc(.2rem + 2px);
+    left: calc(-2.8rem + 2px);
+    width: calc(1.5rem - 4px);
+    height: calc(1.5rem - 4px);
+    background-color: #adb5bd;
+    border-radius: 1.5rem;
+}

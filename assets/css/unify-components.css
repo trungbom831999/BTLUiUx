@@ -25788,8 +25788,8 @@ img.u-block-hover__main--magnifier-top-left {
 }
 
 .form-control {
-  border-color: #ccc;
-  height: auto;
+  /* border-color: #ccc; */
+  /* height: auto; */
 }
 
 .form-control-md {
@@ -25802,7 +25802,7 @@ img.u-block-hover__main--magnifier-top-left {
 
 .form-control,
 .form-control:focus {
-  color: #555;
+  /* color: #555; */
 }
 
 .form-control:focus,
