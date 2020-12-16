@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .competition__header {
   display: flex;
   flex-direction: row;
